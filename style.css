@@ -1,0 +1,323 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+svg {
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 0.7fr 5fr;
+    grid-template-columns: 1fr 4fr;
+}
+
+.header {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.sidebar {
+    background-color: #2091D4;
+    grid-row: 1/3;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: white;
+    padding: 25px 30px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.sidebar > * {
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+.logo svg {
+    height: 3rem;
+    width: 3rem;
+}
+
+.skip {
+    margin-bottom: 3rem;
+}
+
+.content {
+    background-color: #E2E8EF;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+}
+
+.header {
+    padding: 20px 40px;
+}
+
+.row1 {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.header > * {
+    display: flex;
+}
+
+.row1 > *{
+    flex-grow: 1;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.input {
+    width: 100%;
+    height: 2rem;
+    border: none;
+    background-color: #E2E8EF;
+    border-radius: 20px;
+}
+
+.row1 div:last-child {
+    justify-content: flex-end;
+}
+
+.two {
+    margin-right: 1%;
+}
+
+.profile-picture {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 45px;
+}
+
+.row2 .profile-picture {
+    width: 5rem;
+    height: 5rem;
+}
+
+.greet {
+    display: flex;
+    align-items: center;
+}
+
+.greet div:last-child {
+    line-height: 3ch;
+    font-weight: 700;
+    margin-left: 25px;
+}
+
+.greet div:last-child p:first-child {
+    font-size: 0.8rem;
+}
+
+.greet div:last-child p:last-child {
+    font-size: 1.5rem;
+}
+
+.row2 {
+    justify-content: space-between;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.buttons > * {
+    background-color: #2091D4;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.content {
+    padding: 35px 35px 20px 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.projects {
+    height: 100%;
+    grid-row: 1/3;
+    grid-column: 1/2;
+    padding-right: 20px;
+}
+
+.announcements {
+    height: 100%;
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+.trending {
+    height: 100%;
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.projects > p {
+    padding-left: 0.5%;
+    padding-bottom: 15px;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.announcements > p, .trending > p {
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+
+.cards {
+    height: 95%;
+    display: flex;
+    gap: 3%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(to right, orange 2%, white 2%);
+    width: 48%;
+    height: 30%;
+
+}
+
+.card div:first-child {
+    margin-left: 9%;
+    margin-top: 7%;
+}
+
+.card p {
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+.card > div > div {
+    color: #636363;
+    margin-right: 10px;
+}
+
+.card svg {
+    width: 1.7rem;
+    height: 1.7rem;
+    margin: 0 10px;
+}
+
+.icons {
+    align-self: flex-end;
+    margin-bottom: 5%;
+    margin-right: 7%;
+}
+
+.card-announcement, .card-trending {
+    background-color: white;
+}
+
+.card-announcement {
+    padding: 10%;
+    font-size: 0.8rem;
+}
+
+.card-announcement > p {
+    padding-bottom: 3px;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.card-announcement > div {
+    color: #636363;
+}
+
+.card-announcement > br {
+    display: block;
+    content: "";
+    height: 1px;
+    background-color: #D3D3D3;
+    margin: 15px 0;
+}
+
+.card-announcement > p, .card-announcement > div {
+    margin: 0 5px;
+}
+
+.card-trending {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.trending {
+    height: 87.47%;
+}
+
+.announcements {
+    height: 100%;
+}
+
+.trending img {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.card-trending > div{
+    font-size: 0.9rem;
+    color: #636363;
+    margin-left: 10%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.card-trending span {
+    color: black;
+}
+
+.card , .card-announcement , .card-trending {
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+}
